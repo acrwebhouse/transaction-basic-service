@@ -1,12 +1,14 @@
 # transaction-basic-service
 
 build docker
-docker build . -t acrwebdev/transaction-basic-service
+docker build . -t acrwebdev/transaction-basic-service:0.0.1
 
 docker push
-docker push acrwebdev/transaction-basic-service
+docker push acrwebdev/transaction-basic-service:0.0.1
+
+docker pull acrwebdev/transaction-basic-service:0.0.1
 
 docker pull acrwebdev/transaction-basic-service:latest
 
 run docker
-docker run -p 22000:22000 --env SERVER_IP=35.234.42.100 --env SERVER_PORT=22000 --env DB_PORT=27017 --env DB_IP=10.140.0.2 --env SWAGGER_IP=35.234.42.100 --restart=always --name=transaction-basic-service -d acrwebdev/transaction-basic-service
+docker run -p 22000:22000 --env SERVER_IP=34.80.78.75 --env SERVER_PORT=22000 --env DB_PORT=27017 --env DB_IP=10.140.0.2 --env SWAGGER_IP=34.80.78.75 --restart=always --name=transaction-basic-service -d acrwebdev/transaction-basic-service:0.0.1
