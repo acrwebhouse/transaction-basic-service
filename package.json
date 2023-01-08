@@ -9,7 +9,7 @@
     "cors": "^2.8.5",
     "dotenv": "^14.3.2",
     "express": "^4.13.4",
-    "mongodb": "^2.2.15",
+    "mongodb": "^3.6.0",
     "multer": "^1.3.0",
     "node-uuid": "^1.4.8",
     "swagger-autogen": "^2.18.8",
